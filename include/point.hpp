@@ -1,7 +1,7 @@
 #ifndef PERIOR_TREE_POINT
 #define PERIOR_TREE_POINT
-#include <periortree/point_traits.hpp>
-#include <periortree/point_ops.hpp>
+#include "point_traits.hpp"
+#include "point_ops.hpp"
 
 #if __cplusplus >= 201103L
 #include <initializer_list>

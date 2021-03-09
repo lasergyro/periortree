@@ -1,7 +1,7 @@
 #ifndef PERIOR_TREE_NODE_HPP
 #define PERIOR_TREE_NODE_HPP
-#include <periortree/rectangle.hpp>
-#include <periortree/containers.hpp>
+#include "rectangle.hpp"
+#include "containers.hpp"
 
 namespace perior
 {

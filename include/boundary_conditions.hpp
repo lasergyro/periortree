@@ -1,7 +1,7 @@
 #ifndef PERIOR_TREE_BOUNDARY_CONDITIONS
 #define PERIOR_TREE_BOUNDARY_CONDITIONS
-#include <periortree/point_traits.hpp>
-#include <periortree/point_ops.hpp>
+#include "point_traits.hpp"
+#include "point_ops.hpp"
 #include <boost/utility/enable_if.hpp>
 #include <boost/static_assert.hpp>
 #include <boost/config.hpp>

@@ -1,6 +1,6 @@
 #ifndef PERIOR_TREE_POINT_OPERATIONS
 #define PERIOR_TREE_POINT_OPERATIONS
-#include <periortree/point_traits.hpp>
+#include "point_traits.hpp"
 #include <boost/utility/enable_if.hpp>
 
 namespace perior

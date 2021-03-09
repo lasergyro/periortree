@@ -1,7 +1,7 @@
 #ifndef PERIOR_TREE_AREA
 #define PERIOR_TREE_AREA
-#include <periortree/boundary_conditions.hpp>
-#include <periortree/rectangle.hpp>
+#include "boundary_conditions.hpp"
+#include "rectangle.hpp"
 #include <cmath>
 
 namespace perior

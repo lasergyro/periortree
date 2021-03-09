@@ -1,9 +1,9 @@
 #ifndef PERIOR_TREE_QUERY_H
 #define PERIOR_TREE_QUERY_H
-#include <periortree/point_traits.hpp>
-#include <periortree/boundary_conditions.hpp>
-#include <periortree/rectangle.hpp>
-#include <periortree/intersects.hpp>
+#include "point_traits.hpp"
+#include "boundary_conditions.hpp"
+#include "rectangle.hpp"
+#include "intersects.hpp"
 #include <boost/static_assert.hpp>
 
 namespace perior

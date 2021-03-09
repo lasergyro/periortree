@@ -1,7 +1,7 @@
 #ifndef PERIOR_TREE_RECTANGLE_TRAITS
 #define PERIOR_TREE_RECTANGLE_TRAITS
-#include <periortree/point_traits.hpp>
-#include <periortree/rectangle.hpp>
+#include "point_traits.hpp"
+#include "rectangle.hpp"
 
 namespace perior
 {

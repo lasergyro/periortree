@@ -1,14 +1,14 @@
 #ifndef PERIOR_TREE_RTREE_HPP
 #define PERIOR_TREE_RTREE_HPP
-#include <periortree/point_traits.hpp>
-#include <periortree/rectangle_traits.hpp>
-#include <periortree/indexable.hpp>
-#include <periortree/node.hpp>
-#include <periortree/expand.hpp>
-#include <periortree/within.hpp>
-#include <periortree/area.hpp>
-#include <periortree/to_svg.hpp>
-#include <periortree/containers.hpp>
+#include "point_traits.hpp"
+#include "rectangle_traits.hpp"
+#include "indexable.hpp"
+#include "node.hpp"
+#include "expand.hpp"
+#include "within.hpp"
+#include "area.hpp"
+#include "to_svg.hpp"
+#include "containers.hpp"
 
 #include <boost/optional.hpp>
 #include <limits>

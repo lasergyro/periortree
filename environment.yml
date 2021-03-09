@@ -1,0 +1,9 @@
+prefix: ./.conda
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - compilers
+  - cmake
+  - boost
+  - numpy

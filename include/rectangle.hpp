@@ -1,6 +1,6 @@
 #ifndef PERIOR_TREE_RECTANGLE
 #define PERIOR_TREE_RECTANGLE
-#include <periortree/point_traits.hpp>
+#include "point_traits.hpp"
 #include <boost/static_assert.hpp>
 #include <boost/config.hpp>
 

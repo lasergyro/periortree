@@ -1,0 +1,44 @@
+{% set name = "periortree" %}
+{% set sdata = load_setup_py_data() %}
+{% set build = 0 %}
+{% set conda_version = version %}
+
+package:
+  name: periortree
+  version: {{ sdata['version'] }}
+
+source:
+  - path: ../include
+    folder: include
+  - path: ../periortree
+    folder: periortree
+  - path: ../README.md
+  - path: ../LICENSE
+  - path: ../setup.py
+
+build:
+  number: {{ build }}
+  string: py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ build }}
+
+requirements:
+  run:
+    - python {{ sdata['python_requires'] }}
+    - boost
+    {% for dep in sdata.get('install_requires',{}) %}
+    - {{ dep }}
+    {% endfor %}
+
+test:
+  commands:
+    - python -m periortree.test
+
+about:
+  home: '{{ sdata['url'] }}'
+  license: '{{ sdata['license'] }}'
+  license_file: '{{ environ["SRC_DIR"] }}/LICENSE'
+  summary: '{{ sdata['description'] }}'
+  description: '{{ sdata['long_description'] }}'
+
+extra:
+  recipe-maintainers:
+   -  lasergyro

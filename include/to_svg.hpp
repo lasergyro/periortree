@@ -1,8 +1,8 @@
 #ifndef PERIOR_TREE_TO_SVG_HPP
 #define PERIOR_TREE_TO_SVG_HPP
-#include <periortree/rectangle.hpp>
-#include <periortree/point_traits.hpp>
-#include <periortree/boundary_conditions.hpp>
+#include "rectangle.hpp"
+#include "point_traits.hpp"
+#include "boundary_conditions.hpp"
 #include <iostream>
 #include <string>
 
