@@ -1,11 +1,8 @@
-{% set name = "periortree" %}
-{% set sdata = load_setup_py_data() %}
 {% set build = 0 %}
-{% set conda_version = version %}
 
 package:
   name: periortree
-  version: {{ sdata['version'] }}
+  version: '0.0.1'
 
 source:
   - path: ../include
@@ -14,6 +11,7 @@ source:
     folder: periortree
   - path: ../README.md
   - path: ../LICENSE
+  - path: ../pyproject.toml
   - path: ../setup.py
 
 build:
@@ -21,23 +19,29 @@ build:
   string: py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ build }}
 
 requirements:
+  build:
+    - python
+    - setuptools
+    - pip
   run:
-    - python {{ sdata['python_requires'] }}
+    - python
     - boost
-    {% for dep in sdata.get('install_requires',{}) %}
-    - {{ dep }}
-    {% endfor %}
+    - cppyy
+    - numpy
 
 test:
   commands:
     - python -m periortree.test
 
 about:
-  home: '{{ sdata['url'] }}'
-  license: '{{ sdata['license'] }}'
+  home: 'https://github.com/lasergyro/periortree'
+  license: 'MIT'
   license_file: '{{ environ["SRC_DIR"] }}/LICENSE'
-  summary: '{{ sdata['description'] }}'
-  description: '{{ sdata['long_description'] }}'
+  summary: 'An extension of R-Tree1 for Periodic Boundary Condition.'
+  description: |
+    An extension of R-Tree[1](#References) for Periodic Boundary Condition.
+    PerioR-Tree is a header-only library depending on Boost C++ Library.
+    This fork packages it for python via conda and a minimal interface using cppyy.
 
 extra:
   recipe-maintainers:
